@@ -1,8 +1,26 @@
 {
-  "name": "gpc-ko-Grid",
+  "name": "GPC-KO-Grid",
   "description": "A grid component based on Knockout.js",
   "bugs": {
     "email": "gygax@practicomp.ch"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "version": "0.0.0",
+  "main": "lib/grid.js",
+  "dependencies": {
+    "knockout": "~3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JPGygax68/gpc-ko-grid.git"
+  },
+  "keywords": [
+    "knockout",
+    "grid"
+  ],
+  "author": "gygax@practicomp.ch"
 }
