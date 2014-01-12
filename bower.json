@@ -1,0 +1,21 @@
+{
+  "name": "Backgrid test",
+  "version": "0.0.0",
+  "authors": [
+    "Jean-Pierre Gygax <gygax@practicomp.ch>"
+  ],
+  "main": "index.jade",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backgrid": "~0.3.0",
+    "jquery": "~2.0.3"
+  }
+}

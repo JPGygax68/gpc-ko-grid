@@ -1,0 +1,8 @@
+{
+  "name": "gpc-ko-Grid",
+  "description": "A grid component based on Knockout.js",
+  "bugs": {
+    "email": "gygax@practicomp.ch"
+  },
+  "license": "Apache-2.0"
+}

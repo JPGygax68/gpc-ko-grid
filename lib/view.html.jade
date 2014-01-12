@@ -1,0 +1,16 @@
+div.gpc-ko-grid(tabindex="0",data-bind="gpcKoGrid: {}")
+  p(data-bind="text: viewModelId")
+  div(data-bind="style: { height: (itemsPerPage * (rowHeight + gridLineWidth) - gridLineWidth) + 'px' }")
+    table
+      /// colgroup(data-bind="foreach: columnDefs")
+      /// col(data-bind="attr: { width: width }")
+      tbody(data-bind="event: { keydown: keydown }, foreach: rowObjs")
+        tr(data-bind="hasFocus: hasFocus, css: { isSelected: isSelected, isLast: isLast() }, style: { height: height()+'px' }, isActive: isActive, foreach: cells", tabindex="0")
+          td(data-bind="style: { 'width': col.width, 'max-width': col.width }, attr: { 'data-type': dataType }")
+            // ko if: $parent.isActive
+            input(data-bind="attr: { type: inputType, size: inputSize }, value: text, hasFocus: hasFocus")
+            // /ko
+            // ko ifnot: $parent.isActive
+            div(data-bind="text: text")
+            // /ko
+div(data-bind="text: selectedItemId")
